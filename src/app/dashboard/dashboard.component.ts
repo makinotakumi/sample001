@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  str:String = "";
+  constructor() { 
+    this.str = "hello world";
+  }
 
   ngOnInit(): void {
+
+    this.str = "b";
+    this.hoge();
+  }
+
+  hoge(): void {
+    this.str = "hoge";
   }
 
 }
